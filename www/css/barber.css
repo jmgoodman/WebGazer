@@ -1,0 +1,17 @@
+.barber {
+    font-size: 2em;
+    width: 300px;
+    height: 20px;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    background-image: repeating-linear-gradient(90deg, #a6f6f6, #f6f6a6 20px, #f6f6a6 20px, #a6f6f6 40px);
+    /* Expanded the size of the image to prevent visual blips when animation loop repeats */
+    background-size: 5000%;
+    animation: animatedBackground 100s linear infinite;
+  }
+  
+  @keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: -100% 0; }
+  }
+  
